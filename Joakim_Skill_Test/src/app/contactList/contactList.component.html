@@ -1,0 +1,47 @@
+<div>
+  <p style="margin:5px;">Filter by:</p>
+  <!--Select will be used to know what to filter by-->
+  <select #filterList (change)="onSelected(filterList.value)" style="margin:5px;" id="filterList" name="filterList">
+    <option value="1">None</option>
+    <option value="2">Name</option>
+    <option value="3">Phone Number</option>
+    <option value="4">Email</option>
+    <option value="5">Country</option>
+  </select>
+
+  <!--The input will then be for the user to enter what they want to look for-->
+
+  <input style="margin:5px;" id="filter" name="filter" type="text" #filter />
+
+  <!--The button will then grab a new set of contacts based on the filters set by the select-->
+  <button style="margin:5px;" id="filterButton" button type="button" (click)="filterContacts(filterList, filter)">Update Contacts with Filter</button>
+</div>
+
+<div *ngFor="let contact of contacts">
+  <h3>
+    {{ contact.Info.Name }}
+  </h3>
+
+  <p style="margin-left:5px;">
+    Number: {{ contact.Info.DefaultPhone.CountryCode }}
+    {{ contact.Info.DefaultPhone.Number }} ({{
+      contact.Info.DefaultPhone.Description
+    }}) <br />
+    Email: {{ contact.Info.DefaultEmail.EmailAddress }}<br />
+    Address: {{ contact.Info.InvoiceAddress.AddressLine1 }}
+    {{ contact.Info.InvoiceAddress.AddressLine2 }}
+    {{ contact.Info.InvoiceAddress.AddressLine3 }}
+    {{ contact.Info.InvoiceAddress.City }}
+    {{ contact.Info.InvoiceAddress.Country }}.
+  </p>
+  <a [title]="contact.ID + ' details'" [routerLink]="['/contacts', contact.ID]">
+    <button style="margin:5px;" button type="button">Edit Contact</button>
+  </a>
+
+  <button style="margin:5px;"
+          button
+          type="button"
+          (click)="deleteContact(contact.ID)">
+    Delete Contact
+  </button>
+</div>

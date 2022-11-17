@@ -1,0 +1,80 @@
+[
+  {
+    "ID": 1,
+    "InfoID": 87,
+    "Info": {
+      "ID": 87,
+      "DefaultEmailID": 8,
+      "DefaultPhoneID": 41,
+      "InvoiceAddressID": 107,
+      "Name": "Mikke Mus Kontaktperson",
+      "DefaultEmail": {
+        "ID": 8,
+        "BusinessRelationID": 0,
+        "Deleted": false,
+        "Description": "",
+        "EmailAddress": "mikke@mus.com"
+      },
+      "DefaultPhone": {
+        "ID": 41,
+        "BusinessRelationID": 0,
+        "CountryCode": "+999",
+        "Description": "Mobile",
+        "Number": "999-999-999",
+        "Type": "0"
+      },
+      "InvoiceAddress": {
+        "ID": 107,
+        "AddressLine1": "Andebygaten 33b",
+        "AddressLine2": "2 etg.",
+        "AddressLine3": "",
+        "BusinessRelationID": 0,
+        "City": "Andeby",
+        "Country": "DisneyWorld",
+        "CountryCode": "DW",
+        "PostalCode": "341234-A",
+        "Region": ""
+      }
+    },
+    "Comment": "First comment"
+  },
+  {
+    "ID": 2,
+    "InfoID": 85,
+    "Info": {
+      "ID": 85,
+      "DefaultEmailID": 5,
+      "DefaultPhoneID": 42,
+      "InvoiceAddressID": 117,
+      "Name": "Donald Kontaktperson",
+      "DefaultEmail": {
+        "ID": 5,
+        "BusinessRelationID": 1,
+        "Deleted": false,
+        "Description": "",
+        "EmailAddress": "Donald@and.com"
+      },
+      "DefaultPhone": {
+        "ID": 42,
+        "BusinessRelationID": 1,
+        "CountryCode": "+999",
+        "Description": "Mobile",
+        "Number": "998-989-899",
+        "Type": "0"
+      },
+      "InvoiceAddress": {
+        "ID": 117,
+        "AddressLine1": "Andebygaten 32b",
+        "AddressLine2": "1 etg.",
+        "AddressLine3": "",
+        "BusinessRelationID": 1,
+        "City": "Andeby",
+        "Country": "DisneyWorld",
+        "CountryCode": "DW",
+        "PostalCode": "341234-A",
+        "Region": ""
+      }
+    },
+    "Comment": "Second comment"
+  }
+]

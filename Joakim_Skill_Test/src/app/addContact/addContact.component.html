@@ -1,0 +1,57 @@
+<p></p>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name"> Name </label>
+    <input id="Name" type="text" formControlName="Name" />
+  </div>
+  <div>
+    <label for="PhoneCountryCode"> Phone Country Code </label>
+    <input id="CountryCode" type="text" formControlName="PhoneCountryCode" />
+  </div>
+  <div>
+    <label for="Number"> Phone Number </label>
+    <input id="Number" type="text" formControlName="Number" />
+  </div>
+  <div>
+    <label for="Description"> Phone Description </label>
+    <input id="Description" type="text" formControlName="Description" />
+  </div>
+  <div>
+    <label for="email"> Email </label>
+    <input id="Email" type="email" formControlName="Email" />
+  </div>
+  <div>
+    <label for="AddressLine1"> Address Line 1 </label>
+    <input id="AddressLine1" type="text" formControlName="AddressLine1" />
+  </div>
+  <div>
+    <label for="AddressLine2"> Address Line 2 </label>
+    <input id="AddressLine2" type="text" formControlName="AddressLine2" />
+  </div>
+  <div>
+    <label for="AddressLine3"> Address Line 3 </label>
+    <input id="AddressLine3" type="text" formControlName="AddressLine3" />
+  </div>
+  <div>
+    <label for="City"> City </label>
+    <input id="City" type="text" formControlName="City" />
+  </div>
+  <div>
+    <label for="Country"> Country </label>
+    <input id="Country" type="text" formControlName="Country" />
+  </div>
+  <div>
+    <label for="CountryCode"> Country Code </label>
+    <input id="CountryCode" type="text" formControlName="CountryCode" />
+  </div>
+  <div>
+    <label for="PostalCode"> Postal Code </label>
+    <input id="PostalCode" type="text" formControlName="PostalCode" />
+  </div>
+  <div>
+    <label for="Region"> Region </label>
+    <input id="Region" type="text" formControlName="Region" />
+  </div>
+
+  <button class="button" type="submit">Save Contact</button>
+</form>
